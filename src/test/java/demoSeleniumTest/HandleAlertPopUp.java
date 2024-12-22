@@ -20,7 +20,12 @@ public class HandleAlertPopUp {
 		//switch to alert pop up and accept the alert
 		driver.switchTo().alert().accept();
 		
+		//----------------------------  
 		
+		driver.findElement(By.xpath("//button[@onclick='myDesk()']")).click();
+		// driver.switchTo().alert().accept();  //---to accept alert
+		
+		driver.switchTo().alert().dismiss();
 		
 		
 	}
